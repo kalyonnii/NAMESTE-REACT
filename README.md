@@ -57,8 +57,14 @@ https://tailwindcss.com/
 https://react.dev/learn/passing-data-deeply-with-context
 https://react.dev/learn/reacting-to-input-with-state
 
-ZUSTAND
+#ZUSTAND
 https://github.com/pmndrs/zustand
 
-REDUX TOOLKIT
+#REDUX TOOLKIT
 https://redux-toolkit.js.org/introduction/getting-started
+
+immer
+https://immerjs.github.io/immer/
+
+RTK query 
+https://redux-toolkit.js.org/rtk-query/overview

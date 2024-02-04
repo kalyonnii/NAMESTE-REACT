@@ -12,7 +12,7 @@ const {name, cuisines, avgRating, costForTwo, cloudinaryImageId}=resData?.info;
   //destructuring on the fly
 
   return (
-    <div className="res-card bg-gray-100 rounded-lg hover:bg-gray-400 m-4 p-4 w-[250px] ">
+    <div className="res-card bg-gray-100 rounded-lg hover:bg-gray-300 m-4 p-4 w-[250px] ">
       <img
         className="res-logo w-56 h-56 rounded-lg"
         alt="res-logo"
@@ -40,7 +40,7 @@ export const withPromotedLabel=(RestaurantCard)=>{
   return (props)=>{
     return(
       <div>
-        <label className="absolute bg-black text-white m-2 p-2 rounded-lg">Promoted</label>
+        <label className="absolute bg-green-300 text-black  mx-8 m-4 p-2 rounded-lg">Opened</label>
         <RestaurantCard {...props}/>
       </div>
     )

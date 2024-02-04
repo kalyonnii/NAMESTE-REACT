@@ -146,8 +146,15 @@ const Body = () => {
           //     <RestaurantCard key={restaurant.id} resData={restaurant} />
           //   )
 
-          <Link key={restaurant.info.id} to={"/restaurants/"+restaurant.info.id }>
-          <RestaurantCard  resData={restaurant} />
+          <Link
+            key={restaurant.info.id}
+            to={"/restaurants/" + restaurant.info.id}
+          >
+            {restaurant.info.isOpen ? (
+              <RestaurantCardPromoted resData={restaurant} />
+            ) : (
+              <RestaurantCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
