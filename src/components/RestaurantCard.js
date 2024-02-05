@@ -4,6 +4,7 @@ import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  //console.log(resData)
 const {loggedInUser}=useContext(UserContext)
 const {name, cuisines, avgRating, costForTwo, cloudinaryImageId}=resData?.info;
   // const {  name, cusine, rating, costForTwo, time } = resData?.data||{};
@@ -12,7 +13,7 @@ const {name, cuisines, avgRating, costForTwo, cloudinaryImageId}=resData?.info;
   //destructuring on the fly
 
   return (
-    <div className="res-card bg-gray-100 rounded-lg hover:bg-gray-300 m-4 p-4 w-[250px] ">
+    <div data-testid="resCard" className="res-card bg-gray-100 rounded-lg hover:bg-gray-300 m-4 p-4 w-[250px] ">
       <img
         className="res-logo w-56 h-56 rounded-lg"
         alt="res-logo"

@@ -88,6 +88,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="search-box p-2 border border-solid border-black rounded-lg"
             value={searchText}
             onChange={(e) => {
@@ -109,18 +110,19 @@ const Body = () => {
         </div>
         <div className="search m-4 p-4 flex items-center">
           <button
+  
             className="filter-btn px-4 py-2 bg-gray-100 m-4 rounded-lg"
             onClick={() => {
-              // console.log("button clicked");
+              console.log("button clicked");
               //filter logic
               // ListOfRestaurants = resList.filter(
               //   (res) => res.data.rating > 4
               // );
               const filteredList = ListOfRestaurants.filter(
-                (res) => res.info.avgRating > 4.5
+                (res) => res.info.avgRating >= 4.5
               );
-              setListOfRestaurant(filteredList);
-              // console.log(ListOfRestaurants);
+              setFilteredRestaurant(filteredList);
+              // console.log(filteredList);
             }}
           >
             Top Rated Restaurants

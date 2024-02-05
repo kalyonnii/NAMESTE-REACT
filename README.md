@@ -68,3 +68,13 @@ https://immerjs.github.io/immer/
 
 RTK query 
 https://redux-toolkit.js.org/rtk-query/overview
+
+
+testing 
+https://testing-library.com/docs/react-testing-library/intro/
+
+https://jestjs.io/
+
+https://parceljs.org/languages/javascript/#babel
+
+https://testing-library.com/docs/react-testing-library/setup
